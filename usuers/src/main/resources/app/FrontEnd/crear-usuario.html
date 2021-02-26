@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Crear usuario</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <a class="navbar-brand" href="index.html">Valid</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="crear-usuario.html">Crear usuario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="listar-usuario.html">Listar usuarios</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <main role="main" class="container">
+
+        <body class="text-center">
+
+            <form class="form-signin">
+                <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-check-square-fill" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                </svg>
+                <h1 class="h3 mb-3 font-weight-normal">Formulario de creacion de usuario</h1>
+                <br>
+                <label for="inputNombre" class="sr-only">Nombre del usuario</label>
+                <input type="text" id="inputNombre" class="form-control" placeholder="Nombre" required="" autofocus="">
+                <br>
+                <label for="inputApellido" class="sr-only">Apellido del usuario</label>
+                <input type="apellido" id="inputapellido" class="form-control" placeholder="Apellido" required="">
+                <br>
+                <button type="button" class="btn btn-lg btn-primary btn-block" onclick="guardarUsuario()">Guardar
+                    usuario</button>
+                <p class="mt-5 mb-3 text-muted">© 2017-2020</p>
+            </form>
+
+            <div class="alert alert-danger" id="error" role="alert" style="visibility: hidden">
+                Ocurrio algun error
+            </div>
+
+
+        </body>
+    </main>
+    <script type="text/javascript" src="scripts/crear-usuario.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="/docs/4.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
